@@ -1,0 +1,309 @@
+/* === Author page === */
+/* Extends style.css. Only page-specific components live here. */
+
+/* --- Hero --- */
+.author-hero {
+    padding: 160px 0 80px;
+}
+
+.author-hero-inner {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 56px;
+    align-items: center;
+}
+
+.author-portrait img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: 1px solid var(--gray-200);
+    display: block;
+}
+
+.author-intro h1 {
+    margin-bottom: 12px;
+}
+
+.author-role {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--gray-600);
+}
+
+.author-lede {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    line-height: 1.7;
+    max-width: 620px;
+    margin-top: 20px;
+}
+
+.author-links {
+    margin-top: 32px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* --- Biography --- */
+.author-bio {
+    background: var(--gray-100);
+}
+
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.bio-body h2 {
+    margin-bottom: 24px;
+}
+
+.bio-body p {
+    color: var(--gray-600);
+    line-height: 1.75;
+    margin-bottom: 18px;
+    max-width: 68ch;
+}
+
+.bio-body a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.bio-body a:hover {
+    border-bottom-color: var(--accent);
+}
+
+.bio-facts {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    padding: 28px;
+}
+
+.bio-photo {
+    margin: 0 0 24px;
+}
+
+.bio-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.bio-photo figcaption {
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.bio-fact {
+    padding-top: 18px;
+    margin-top: 18px;
+    border-top: 1px solid var(--gray-200);
+}
+
+.bio-fact h4 {
+    color: var(--gray-600);
+    margin-bottom: 6px;
+}
+
+.bio-fact p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* --- Publications --- */
+.pub-list {
+    list-style: none;
+    margin-top: 48px;
+    display: grid;
+    gap: 20px;
+}
+
+.pub-item {
+    padding: 32px;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pub-item:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.08);
+}
+
+.pub-meta {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.pub-year {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.pub-venue {
+    color: var(--gray-600);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.pub-item h3 {
+    font-size: 1.2rem;
+    line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.pub-item h3 a {
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gray-200);
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.pub-item h3 a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.pub-item p {
+    color: var(--gray-600);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 72ch;
+}
+
+.pub-tags {
+    margin-top: 12px;
+    font-size: 0.82rem !important;
+    color: var(--gray-600);
+}
+
+.pub-subhead {
+    margin-top: 72px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+/* --- Software --- */
+.author-software {
+    background: var(--gray-100);
+}
+
+.author-software .tech-card {
+    background: var(--white);
+}
+
+/* --- Experience timeline --- */
+.timeline {
+    list-style: none;
+    margin-top: 48px;
+    border-left: 2px solid var(--gray-200);
+    padding-left: 0;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 32px;
+    padding: 22px 0 22px 32px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 30px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 2px solid var(--gray-400);
+}
+
+.timeline-item:hover::before {
+    border-color: var(--accent);
+    background: var(--accent);
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--gray-600);
+    padding-top: 2px;
+}
+
+.timeline-body h3 {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+
+.timeline-body p {
+    font-size: 0.92rem;
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+/* --- Accessibility --- */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    .bio-grid { grid-template-columns: 1fr; gap: 48px; }
+}
+
+@media (max-width: 768px) {
+    .author-hero {
+        padding: 130px 0 60px;
+    }
+    .author-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: left;
+    }
+    .author-portrait {
+        max-width: 180px;
+    }
+    .pub-item { padding: 24px; }
+    .pub-meta { flex-wrap: wrap; gap: 8px; }
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding-left: 24px;
+    }
+    .pub-subhead { margin-top: 56px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
