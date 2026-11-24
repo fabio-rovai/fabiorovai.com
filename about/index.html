@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fabio Rovai | AI Researcher and Data Scientist, London</title>
-    <meta name="description" content="Fabio Rovai is an AI researcher and data scientist in London. Co-founder of The Tesseract Academy, author of five arXiv papers on causal verification, ontology engineering, and world models, and researcher for the Alan Turing Institute and the Welsh Government.">
+    <meta name="description" content="Fabio Rovai is an AI researcher and data scientist in London. Founder of Rovai Heavy Industries and co-founder of The Tesseract Academy, he works on causal verification, ontology engineering and world models, with research for the Alan Turing Institute and the Welsh Government.">
     <meta name="author" content="Fabio Rovai">
+    <meta name="theme-color" content="#0b0a09">
     <link rel="canonical" href="https://fabiorovai.com/about/">
 
     <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Rovai Heavy Industries">
     <meta property="og:title" content="Fabio Rovai | AI Researcher and Data Scientist, London">
-    <meta property="og:description" content="AI researcher and data scientist. Co-founder of The Tesseract Academy. Five arXiv papers on causal verification, ontology engineering, and world models.">
+    <meta property="og:description" content="AI researcher and data scientist. Founder of Rovai Heavy Industries, co-founder of The Tesseract Academy. Works on causal verification, ontology engineering and world models.">
     <meta property="og:url" content="https://fabiorovai.com/about/">
     <meta property="og:image" content="https://fabiorovai.com/assets/fabio-rovai.jpg">
     <meta property="og:image:alt" content="Portrait photograph of Fabio Rovai">
@@ -19,22 +21,21 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Fabio Rovai | AI Researcher and Data Scientist, London">
-    <meta name="twitter:description" content="AI researcher and data scientist. Co-founder of The Tesseract Academy. Five arXiv papers on causal verification, ontology engineering, and world models.">
+    <meta name="twitter:description" content="AI researcher and data scientist. Founder of Rovai Heavy Industries, co-founder of The Tesseract Academy. Works on causal verification, ontology engineering and world models.">
     <meta name="twitter:image" content="https://fabiorovai.com/assets/fabio-rovai.jpg">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="author.css">
+    <link rel="preload" href="/assets/fonts/saira-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/plex-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/rovai.css">
+    <script>document.documentElement.classList.add('js');</script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfilePage",
       "url": "https://fabiorovai.com/about/",
-      "dateModified": "2026-07-28",
+      "dateModified": "2026-11-24",
       "mainEntity": {
         "@type": "Person",
         "@id": "https://fabiorovai.com/#fabio-rovai",
@@ -74,7 +75,8 @@
           },
           {
             "@type": "Organization",
-            "name": "Fabio Rovai Ltd",
+            "@id": "https://fabiorovai.com/#organization",
+            "name": "Rovai Heavy Industries",
             "url": "https://fabiorovai.com/"
           }
         ],
@@ -148,298 +150,296 @@
     }
     </script>
 </head>
-<body>
+<body class="page-file">
 
-    <nav class="nav">
-        <div class="nav-inner">
-            <a href="/" class="nav-logo">Fabio Rovai <span>Ltd</span></a>
-            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="/#ventures">Ventures</a></li>
-                <li><a href="/#technology">Technology</a></li>
-                <li><a href="/#about">About</a></li>
-                <li><a href="/about/" aria-current="page">Fabio Rovai</a></li>
-                <li><a href="/#careers">Careers</a></li>
-                <li><a href="/#contact" class="nav-cta">Get in Touch</a></li>
-            </ul>
-        </div>
-    </nav>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <header class="author-hero">
-        <div class="container author-hero-inner">
-            <div class="author-portrait">
-                <img src="../assets/fabio-rovai.jpg"
-                     alt="Portrait photograph of Fabio Rovai, AI researcher and data scientist"
-                     width="460" height="460" fetchpriority="high">
-            </div>
-            <div class="author-intro">
-                <p class="section-tag">About the founder</p>
-                <h1>Fabio Rovai</h1>
-                <p class="author-role">AI Researcher and Data Scientist &middot; London</p>
-                <p class="author-lede">I build systems that let machines reason about the world and prove that the reasoning holds. My work sits between formal methods and machine learning: causal verification for language agents, ontology engineering, and world models you can audit.</p>
-                <div class="author-links">
-                    <a href="https://scholar.google.com/citations?user=iERM8-0AAAAJ" rel="me noopener" target="_blank" class="btn btn-primary">Google Scholar</a>
-                    <a href="https://www.linkedin.com/in/fabiorovai/" rel="me noopener" target="_blank" class="btn btn-outline">LinkedIn</a>
-                    <a href="https://github.com/fabio-rovai" rel="me noopener" target="_blank" class="btn btn-outline">GitHub</a>
-                    <a href="mailto:fabio@fabiorovai.com" class="btn btn-outline">Email</a>
-                </div>
-            </div>
+    <header class="nav" id="nav">
+        <div class="nav-bar">
+            <a class="brand" href="/" aria-label="Rovai Heavy Industries, home">
+                <svg class="brand-nut" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M22 12l-5 8.66H7L2 12l5-8.66h10zM12 7.8a4.2 4.2 0 1 0 0 8.4 4.2 4.2 0 0 0 0-8.4z"/></svg>
+                <span class="brand-name">Rovai <span>Heavy Industries</span></span>
+            </a>
+            <nav aria-label="Primary">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="/#software">Software</a></li>
+                    <li><a href="/#sectors">Sectors</a></li>
+                    <li><a href="/#work">Work</a></li>
+                    <li><a href="/#latest">Latest</a></li>
+                    <li><a href="/#company">Company</a></li>
+                    <li><a href="/#careers">Careers</a></li>
+                    <li><a href="/#contact" class="nav-cta">Get in touch</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><i></i><i></i></button>
         </div>
+        <div class="nav-progress" aria-hidden="true"></div>
     </header>
 
-    <section class="section author-bio">
-        <div class="container">
-            <div class="bio-grid">
-                <div class="bio-body">
-                    <p class="section-tag">Biography</p>
-                    <h2>Formal rigour, applied to messy problems.</h2>
-                    <p>Fabio Rovai is an AI researcher and data scientist based in London, and co-founder of <a href="https://tesseract.academy/" rel="noopener" target="_blank">The Tesseract Academy</a>. He holds an MSc in Data Science and Artificial Intelligence from the University of the Arts London, where he later taught as an Associate Lecturer for four years.</p>
-                    <p>His research addresses a single question: how do you know an AI system's reasoning is sound? That question runs through all of his published work, from causal verification of agent actions before they execute, to ontology alignment that is provably stable, to event-graph substrates that support counterfactual queries.</p>
-                    <p>Alongside the research, he leads applied engagements for public bodies and industry. He has worked as a researcher for the Alan Turing Institute on large language models in cyber defence, produced a published land valuation study for the Welsh Government, led an Innovate UK BridgeAI programme for the creative industries, and built ontology tooling for the National Digital Twin Programme.</p>
-                    <p>He reviews for the NeurIPS ethics track and maintains a set of open-source tools in Rust and C for ontology reasoning, agent provenance, and document verification.</p>
+    <main id="main">
+
+        <section class="file-hero" data-field data-fx="0.84" data-fy="0.3">
+            <canvas class="hero-gl" aria-hidden="true"></canvas>
+            <div class="wrap file-grid">
+                <div>
+                    <p class="bay-rule mono"><b>Founder</b><i></i>Rovai Heavy Industries</p>
+                    <h1 class="display">Fabio<br>Rovai</h1>
+                    <p class="file-role mono">AI Researcher and Data Scientist &middot; London</p>
+                    <p class="lede">I build systems that let machines reason about the world and prove that the reasoning holds. My work sits between formal methods and machine learning: causal verification for language agents, ontology engineering, and world models you can audit.</p>
+                    <div class="file-links">
+                        <a href="https://scholar.google.com/citations?user=iERM8-0AAAAJ" rel="me noopener" target="_blank" class="btn btn-molten">Google Scholar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+                        <a href="https://www.linkedin.com/in/fabiorovai/" rel="me noopener" target="_blank" class="btn btn-steel">LinkedIn</a>
+                        <a href="https://github.com/fabio-rovai" rel="me noopener" target="_blank" class="btn btn-steel">GitHub</a>
+                        <a href="mailto:fabio@fabiorovai.com" class="btn btn-steel">Email</a>
+                    </div>
                 </div>
-                <aside class="bio-facts">
-                    <figure class="bio-photo">
-                        <img src="../assets/fabio-rovai-graduation.jpg"
-                             alt="Fabio Rovai in academic cap and gown at his University of the Arts London graduation"
-                             width="460" height="460" loading="lazy">
-                        <figcaption>Graduating from the University of the Arts London.</figcaption>
-                    </figure>
-                    <div class="bio-fact">
-                        <h4>Based in</h4>
-                        <p>London, United Kingdom</p>
-                    </div>
-                    <div class="bio-fact">
-                        <h4>Education</h4>
-                        <p>MSc Data Science and Artificial Intelligence, University of the Arts London</p>
-                    </div>
-                    <div class="bio-fact">
-                        <h4>Focus areas</h4>
-                        <p>Causal verification, ontology engineering, knowledge graphs, world models, AI governance</p>
-                    </div>
-                    <div class="bio-fact">
-                        <h4>Service</h4>
-                        <p>Ethics reviewer, NeurIPS</p>
-                    </div>
+                <aside class="portrait" aria-label="At a glance">
+                    <img src="/assets/fabio-rovai.jpg" alt="Portrait photograph of Fabio Rovai, AI researcher and data scientist" width="460" height="460" fetchpriority="high">
+                    <dl class="facts-list">
+                        <div><dt>Company</dt><dd>Rovai Heavy Industries</dd></div>
+                        <div><dt>Also</dt><dd>Co-founder, The Tesseract Academy</dd></div>
+                        <div><dt>Base</dt><dd>London, United Kingdom</dd></div>
+                    </dl>
                 </aside>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="publications" class="section author-pubs">
-        <div class="container">
-            <p class="section-tag">Research</p>
-            <h2>Publications</h2>
-            <p class="section-sub">Preprint and commissioned work. All five preprints below are single-author and available in full on arXiv. Citation counts are tracked on my <a href="https://scholar.google.com/citations?user=iERM8-0AAAAJ" rel="me noopener" target="_blank">Google Scholar profile</a>.</p>
-
-            <ol class="pub-list">
-                <li class="pub-item">
-                    <div class="pub-meta"><span class="pub-year">2026</span><span class="pub-venue">arXiv:2606.10934</span></div>
-                    <h3><a href="https://arxiv.org/abs/2606.10934" rel="noopener" target="_blank">WorldKernel: A World Model is the Coupling Kernel of Admissible Possible Worlds</a></h3>
-                    <p>Argues that observational and interventional data given to a strong enough predictor is not sufficient for counterfactual reasoning. Reframes a world model as a positive semidefinite coupling kernel over admissible possible worlds, where the diagonal is ordinary prediction and the off-diagonal carries the cross-world dependence a standard predictor cannot represent.</p>
-                    <p class="pub-tags">cs.AI &middot; 9 June 2026</p>
-                </li>
-
-                <li class="pub-item">
-                    <div class="pub-meta"><span class="pub-year">2026</span><span class="pub-venue">arXiv:2605.09168</span></div>
-                    <h3><a href="https://arxiv.org/abs/2605.09168" rel="noopener" target="_blank">CIVeX: Causal Intervention Verification for Language Agents</a></h3>
-                    <p>A verifier that decides whether a tool-using agent should execute a proposed action, by mapping it to a structural causal query over a committed action-state graph and returning an auditable verdict: execute, reject, experiment, or abstain. Reports zero observed false executions under moderate and adversarial confounding.</p>
-                    <p class="pub-tags">cs.AI &middot; cs.LG &middot; 9 May 2026</p>
-                </li>
-
-                <li class="pub-item">
-                    <div class="pub-meta"><span class="pub-year">2026</span><span class="pub-venue">arXiv:2605.09184</span></div>
-                    <h3><a href="https://arxiv.org/abs/2605.09184" rel="noopener" target="_blank">Open Ontologies: Tool-Augmented Ontology Engineering with Stable Matching Alignment</a></h3>
-                    <p>An open-source Rust system pairing LLM-driven ontology construction with formal OWL reasoning and alignment over the Model Context Protocol. Stable one-to-one matching is shown to be the dominant factor in alignment quality, reaching F1 of 0.832 on the OAEI Anatomy track.</p>
-                    <p class="pub-tags">cs.AI &middot; cs.CL &middot; cs.DB &middot; 9 May 2026</p>
-                </li>
-
-                <li class="pub-item">
-                    <div class="pub-meta"><span class="pub-year">2026</span><span class="pub-venue">arXiv:2605.15967</span></div>
-                    <h3><a href="https://arxiv.org/abs/2605.15967" rel="noopener" target="_blank">Deterministic Event-Graph Substrates as World Models for Counterfactual Reasoning</a></h3>
-                    <p>Treats a deterministic event graph as the substrate of a world model, so that counterfactual questions become graph queries with defined answers rather than sampled generations.</p>
-                    <p class="pub-tags">cs.AI &middot; cs.CV &middot; cs.LO &middot; 15 May 2026</p>
-                </li>
-
-                <li class="pub-item">
-                    <div class="pub-meta"><span class="pub-year">2026</span><span class="pub-venue">arXiv:2605.23983</span></div>
-                    <h3><a href="https://arxiv.org/abs/2605.23983" rel="noopener" target="_blank">Saturating Scaling Laws for Equational Discovery</a></h3>
-                    <p>592 runs across three toy substrates plus two real-world replications, testing a mean-field model of saturating power-law growth. Finds that growth dynamics are substrate-conditional and do not generalise across domains.</p>
-                    <p class="pub-tags">cs.AI &middot; cs.LO &middot; cs.SI &middot; May 2026</p>
-                </li>
-            </ol>
-
-            <h3 class="pub-subhead">Commissioned and government research</h3>
-            <ol class="pub-list">
-                <li class="pub-item">
-                    <div class="pub-meta"><span class="pub-year">2026</span><span class="pub-venue">Welsh Government</span></div>
-                    <h3><a href="https://www.gov.wales/testing-land-valuation-methods-tesseract-academy" rel="noopener" target="_blank">Testing land valuation methods: Tesseract Academy</a></h3>
-                    <p>Published by the Welsh Government on 17 March 2026 as part of its land value tax evidence programme. Tests five valuation approaches, including market-based statistical valuation and machine learning applications.</p>
-                    <p class="pub-tags">Published 17 March 2026 &middot; GOV.WALES</p>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-meta"><span class="pub-year">2025</span><span class="pub-venue">Alan Turing Institute</span></div>
-                    <h3>Large language models in cyber defence</h3>
-                    <p>Research on reinforcement-learning language agents in emulated networks for threat detection, carried out under a formal research services agreement with the Alan Turing Institute. Report under review.</p>
-                    <p class="pub-tags">Research engagement, December 2023 to January 2025</p>
-                </li>
-            </ol>
-        </div>
-    </section>
-
-    <section id="software" class="section author-software">
-        <div class="container">
-            <p class="section-tag">Open source</p>
-            <h2>Software</h2>
-            <p class="section-sub">Tools I build and maintain in the open.</p>
-            <div class="tech-grid">
-                <a href="https://github.com/fabio-rovai/open-ontologies" rel="noopener" target="_blank" class="tech-card">
-                    <h3>Open Ontologies</h3>
-                    <p>AI-native ontology engine. Rust MCP server with OWL 2 DL reasoning, SHACL validation, and SPARQL. Single binary, no JVM.</p>
-                </a>
-                <a href="https://github.com/fabio-rovai/tardygrada" rel="noopener" target="_blank" class="tech-card">
-                    <h3>Tardygrada</h3>
-                    <p>Trust infrastructure for AI agents. Provenance, integrity, and zero dependencies, in pure C.</p>
-                </a>
-                <a href="https://github.com/fabio-rovai/brain-in-the-fish" rel="noopener" target="_blank" class="tech-card">
-                    <h3>Brain in the Fish</h3>
-                    <p>Score any document and prove every claim, with ontology-grounded verification.</p>
-                </a>
-                <a href="https://github.com/fabio-rovai/worldkernel" rel="noopener" target="_blank" class="tech-card">
-                    <h3>WorldKernel</h3>
-                    <p>Benchmarks for world-model structure, including an off-diagonal kernel witness.</p>
-                </a>
-                <a href="https://github.com/fabio-rovai/ies-hqdm-crosswalk" rel="noopener" target="_blank" class="tech-card">
-                    <h3>IES to HQDM Crosswalk</h3>
-                    <p>A certified axiom bridge between the Information Exchange Standard and HQDM for defence data.</p>
-                </a>
-                <a href="https://github.com/fabio-rovai/mcp-former" rel="noopener" target="_blank" class="tech-card">
-                    <h3>mcp-former</h3>
-                    <p>Tooling for building and transforming Model Context Protocol servers.</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="section author-experience">
-        <div class="container">
-            <p class="section-tag">Experience</p>
-            <h2>Selected roles</h2>
-
-            <ul class="timeline">
-                <li class="timeline-item">
-                    <span class="timeline-date">2026 to present</span>
-                    <div class="timeline-body">
-                        <h3>Researcher, Food Loss and Waste data taxonomy</h3>
-                        <p>Waste and Resources Action Programme (WRAP)</p>
+        <section class="bay" id="biography">
+            <div class="wrap">
+                <p class="bay-rule mono"><b>01</b><i></i>Biography</p>
+                <div class="split">
+                    <div class="prose">
+                        <h2 class="display sm reveal">Formal rigour, applied to messy problems.</h2>
+                        <p class="reveal">Fabio Rovai is an AI researcher and data scientist based in London, founder of Rovai Heavy Industries and co-founder of <a href="https://tesseract.academy/" rel="noopener" target="_blank">The Tesseract Academy</a>. He holds an MSc in Data Science and Artificial Intelligence from the University of the Arts London, where he later taught as an Associate Lecturer for four years.</p>
+                        <p class="reveal">His research addresses a single question: how do you know an AI system's reasoning is sound? That question runs through all of his published work, from causal verification of agent actions before they execute, to ontology alignment that is provably stable, to event-graph substrates that support counterfactual queries.</p>
+                        <p class="reveal">Alongside the research, he leads applied engagements for public bodies and industry. He has worked as a researcher for the Alan Turing Institute on large language models in cyber defence, produced a published land valuation study for the Welsh Government, led an Innovate UK BridgeAI programme for the creative industries, and built ontology tooling for the National Digital Twin Programme.</p>
+                        <p class="reveal">He reviews for the NeurIPS ethics track and maintains a set of open-source tools in Rust and C for ontology reasoning, agent provenance, and document verification.</p>
                     </div>
-                </li>
-                <li class="timeline-item">
-                    <span class="timeline-date">2026</span>
-                    <div class="timeline-body">
-                        <h3>Research Lead, Finance and Health Lab</h3>
-                        <p>Fintech Scotland, 2026 cohort</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <span class="timeline-date">2025 to 2026</span>
-                    <div class="timeline-body">
-                        <h3>Researcher</h3>
-                        <p>Kalgera. Ontology-based financial crime and transaction risk scoring.</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <span class="timeline-date">2025 to 2026</span>
-                    <div class="timeline-body">
-                        <h3>Project Lead, AI for Creative Industries</h3>
-                        <p>Innovate UK BridgeAI</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <span class="timeline-date">2025 to 2026</span>
-                    <div class="timeline-body">
-                        <h3>Researcher, Testing Land Valuation Methodologies</h3>
-                        <p>Welsh Government</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <span class="timeline-date">2025</span>
-                    <div class="timeline-body">
-                        <h3>Project Manager, AI-driven tool for ontology extensions</h3>
-                        <p>National Digital Twin Programme</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <span class="timeline-date">2024 to 2025</span>
-                    <div class="timeline-body">
-                        <h3>Researcher</h3>
-                        <p>Etiq AI. Adversarial red-teaming of retrieval-augmented generation pipelines.</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <span class="timeline-date">2023 to 2025</span>
-                    <div class="timeline-body">
-                        <h3>Researcher</h3>
-                        <p>The Alan Turing Institute. Large language models for cyber defence.</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <span class="timeline-date">2021 to 2025</span>
-                    <div class="timeline-body">
-                        <h3>Associate Lecturer</h3>
-                        <p>University of the Arts London</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <span class="timeline-date">2021 to present</span>
-                    <div class="timeline-body">
-                        <h3>Co-founder</h3>
-                        <p>The Tesseract Academy</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section contact">
-        <div class="container">
-            <div class="contact-inner">
-                <h2>Get in touch.</h2>
-                <p>For research collaborations, speaking, advisory work, or anything involving ontologies and verifiable AI.</p>
-                <div class="contact-links">
-                    <a href="mailto:fabio@fabiorovai.com" class="btn btn-primary">fabio@fabiorovai.com</a>
-                    <a href="https://www.linkedin.com/in/fabiorovai/" rel="me noopener" target="_blank" class="btn btn-outline">LinkedIn</a>
-                    <a href="https://github.com/fabio-rovai" rel="me noopener" target="_blank" class="btn btn-outline">GitHub</a>
+                    <aside class="facts reveal" aria-label="Key facts">
+                        <figure>
+                            <img src="/assets/fabio-rovai-graduation.jpg" alt="Fabio Rovai in academic cap and gown at his University of the Arts London graduation" width="460" height="460" loading="lazy">
+                            <figcaption class="mono">Graduating from the University of the Arts London</figcaption>
+                        </figure>
+                        <dl>
+                            <div><dt class="mono">Based in</dt><dd>London, United Kingdom</dd></div>
+                            <div><dt class="mono">Education</dt><dd>MSc Data Science and Artificial Intelligence, University of the Arts London</dd></div>
+                            <div><dt class="mono">Focus areas</dt><dd>Causal verification, ontology engineering, knowledge graphs, world models, AI governance</dd></div>
+                            <div><dt class="mono">Service</dt><dd>Ethics reviewer, NeurIPS</dd></div>
+                        </dl>
+                    </aside>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <div class="container footer-inner">
-            <p>&copy; 2026 Fabio Rovai Ltd. London, UK.</p>
-            <div class="footer-links">
-                <a href="/">Home</a>
-                <a href="https://www.linkedin.com/in/fabiorovai/" rel="me noopener" target="_blank">LinkedIn</a>
-                <a href="https://github.com/fabio-rovai" rel="me noopener" target="_blank">GitHub</a>
+        <section class="bay bay-alt" id="publications">
+            <div class="wrap">
+                <header class="bay-head">
+                    <p class="bay-rule mono"><b>02</b><i></i>Research</p>
+                    <h2 class="display reveal">Papers and<br>reports.</h2>
+                    <p class="lede reveal" style="--i:1">Refereed work comes first, then commissioned research, then preprints. Citation counts are tracked on my <a href="https://scholar.google.com/citations?user=iERM8-0AAAAJ" rel="me noopener" target="_blank">Google Scholar profile</a>.</p>
+                </header>
+
+                <div class="register-head"><h3>Refereed papers and acceptances</h3><i></i></div>
+                <ol class="register">
+                    <li class="entry reveal">
+                        <p class="entry-meta mono"><b>2026</b>OM 2026</p>
+                        <div>
+                            <h4><a href="https://arxiv.org/abs/2608.21914" rel="noopener" target="_blank">Consistency Is Not Coherence: Orientation Search for Certified Alignments Between 4D Defence Upper Ontologies</a></h4>
+                            <p class="entry-venue">Long paper, OM 2026, the 21st International Workshop on Ontology Matching, co-located with ISWC 2026, Bari.</p>
+                            <p class="entry-text">The first public alignment of the IES, HQDM and BFO upper ontologies. A naive strict-equivalence merge stays consistent while filling with empty classes, so the paper repairs by orientation instead of deletion and certifies the bridge that results.</p>
+                        </div>
+                    </li>
+                    <li class="entry reveal">
+                        <p class="entry-meta mono"><b>2026</b>TDI 2026</p>
+                        <div>
+                            <h4>Assurance Laundering: A Cross-Standard Ontology and Machine-Checked Weakest-Link Policy for Verifiable Credentials</h4>
+                            <p class="entry-venue">International Conference on Trustworthy Digital Infrastructure 2026, hosted by The Alan Turing Institute, London. Presented in person on 16 September 2026.</p>
+                            <p class="entry-text">Lean theorems, axiom-clean, across eight credential stacks, giving the conditions under which a compliant-looking credential carries no assurance at all.</p>
+                        </div>
+                    </li>
+                    <li class="entry reveal">
+                        <p class="entry-meta mono"><b>2026</b>WASP 2026</p>
+                        <div>
+                            <h4>Recovering Method Parameters from Protocol Prose: Task Definition, Audited Extraction, and the Comparability It Licenses</h4>
+                            <p class="entry-venue">Workshop paper, WASP 2026, held with AACL-IJCNLP 2026.</p>
+                            <p class="entry-text">Defines the task of recovering method parameters from the prose of published protocols, audits the extraction, and sets out which comparisons the recovered parameters support.</p>
+                        </div>
+                    </li>
+                    <li class="entry reveal">
+                        <p class="entry-meta mono"><b>2026</b>SEMANTiCS 2026</p>
+                        <div>
+                            <h4><a href="https://github.com/fabio-rovai/dcat-us-binding" rel="noopener" target="_blank">Conformance Over Nothing: Validating a National Metadata Profile Against Its Own Published Artifacts</a></h4>
+                            <p class="entry-venue">Accepted demonstration, Practitioners Track, SEMANTiCS 2026, Ghent, 17 September 2026.</p>
+                            <p class="entry-text">Generates a JSON-LD context and SHACL shapes for DCAT-US 3.0 out of the RDF binding already sitting inside its own JSON Schema.</p>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="register-head"><h3>Commissioned and government research</h3><i></i></div>
+                <ol class="register">
+                    <li class="entry reveal">
+                        <p class="entry-meta mono"><b>2026</b>Welsh Government</p>
+                        <div>
+                            <h4><a href="https://www.gov.wales/testing-land-valuation-methods-tesseract-academy" rel="noopener" target="_blank">Testing land valuation methods: Tesseract Academy</a></h4>
+                            <p class="entry-venue">Published on GOV.WALES, 17 March 2026.</p>
+                            <p class="entry-text">Published by the Welsh Government as part of its land value tax evidence programme. Tests five valuation approaches, including market-based statistical valuation and machine learning applications.</p>
+                        </div>
+                    </li>
+                    <li class="entry reveal">
+                        <p class="entry-meta mono"><b>2025</b>Alan Turing Institute</p>
+                        <div>
+                            <h4>Large language models in cyber defence</h4>
+                            <p class="entry-venue">Research engagement, December 2023 to January 2025.</p>
+                            <p class="entry-text">Research on reinforcement-learning language agents in emulated networks for threat detection, carried out under a formal research services agreement with the Alan Turing Institute. Report under review.</p>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="register-head"><h3>Preprints (not refereed)</h3><i></i></div>
+                <ol class="register">
+                    <li class="entry reveal">
+                        <p class="entry-meta mono"><b>2026</b>Preprint</p>
+                        <div>
+                            <h4><a href="https://arxiv.org/abs/2606.10934" rel="noopener" target="_blank">WorldKernel: A World Model is the Coupling Kernel of Admissible Possible Worlds</a></h4>
+                            <p class="entry-venue">9 June 2026.</p>
+                            <p class="entry-text">Argues that observational and interventional data given to a strong enough predictor is not sufficient for counterfactual reasoning. Reframes a world model as a positive semidefinite coupling kernel over admissible possible worlds, where the diagonal is ordinary prediction and the off-diagonal carries the cross-world dependence a standard predictor cannot represent.</p>
+                        </div>
+                    </li>
+                    <li class="entry reveal">
+                        <p class="entry-meta mono"><b>2026</b>Preprint</p>
+                        <div>
+                            <h4><a href="https://arxiv.org/abs/2605.09168" rel="noopener" target="_blank">CIVeX: Causal Intervention Verification for Language Agents</a></h4>
+                            <p class="entry-venue">9 May 2026.</p>
+                            <p class="entry-text">A verifier that decides whether a tool-using agent should execute a proposed action, by mapping it to a structural causal query over a committed action-state graph and returning an auditable verdict: execute, reject, experiment, or abstain. Reports zero observed false executions under moderate and adversarial confounding.</p>
+                        </div>
+                    </li>
+                    <li class="entry reveal">
+                        <p class="entry-meta mono"><b>2026</b>Preprint</p>
+                        <div>
+                            <h4><a href="https://arxiv.org/abs/2605.09184" rel="noopener" target="_blank">Open Ontologies: Tool-Augmented Ontology Engineering with Stable Matching Alignment</a></h4>
+                            <p class="entry-venue">9 May 2026.</p>
+                            <p class="entry-text">An open-source Rust system pairing LLM-driven ontology construction with formal OWL reasoning and alignment over the Model Context Protocol. Stable one-to-one matching is shown to be the dominant factor in alignment quality, reaching F1 of 0.832 on the OAEI Anatomy track.</p>
+                        </div>
+                    </li>
+                    <li class="entry reveal">
+                        <p class="entry-meta mono"><b>2026</b>Preprint</p>
+                        <div>
+                            <h4><a href="https://arxiv.org/abs/2605.15967" rel="noopener" target="_blank">Deterministic Event-Graph Substrates as World Models for Counterfactual Reasoning</a></h4>
+                            <p class="entry-venue">15 May 2026.</p>
+                            <p class="entry-text">Treats a deterministic event graph as the substrate of a world model, so that counterfactual questions become graph queries with defined answers rather than sampled generations.</p>
+                        </div>
+                    </li>
+                    <li class="entry reveal">
+                        <p class="entry-meta mono"><b>2026</b>Preprint</p>
+                        <div>
+                            <h4><a href="https://arxiv.org/abs/2605.23983" rel="noopener" target="_blank">Saturating Scaling Laws for Equational Discovery</a></h4>
+                            <p class="entry-venue">May 2026.</p>
+                            <p class="entry-text">592 runs across three toy substrates plus two real-world replications, testing a mean-field model of saturating power-law growth. Finds that growth dynamics are substrate-conditional and do not generalise across domains.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="bay" id="software">
+            <div class="wrap">
+                <header class="bay-head">
+                    <p class="bay-rule mono"><b>03</b><i></i>Open source</p>
+                    <h2 class="display reveal">Software.</h2>
+                    <p class="lede reveal" style="--i:1">Tools I build and maintain in the open.</p>
+                </header>
+                <div class="kit">
+                    <a href="https://github.com/fabio-rovai/open-ontologies" rel="noopener" target="_blank" class="kit-card reveal" style="--i:0">
+                        <p class="mono"><span>Rust</span><span class="go">GitHub</span></p>
+                        <h3>Open Ontologies</h3>
+                        <p>AI-native ontology engine. Rust MCP server with OWL 2 DL reasoning, SHACL validation, and SPARQL. Single binary, no JVM.</p>
+                    </a>
+                    <a href="https://github.com/fabio-rovai/tardygrada" rel="noopener" target="_blank" class="kit-card reveal" style="--i:1">
+                        <p class="mono"><span>C</span><span class="go">GitHub</span></p>
+                        <h3>Tardygrada</h3>
+                        <p>Trust infrastructure for AI agents. Provenance, integrity, and zero dependencies, in pure C.</p>
+                    </a>
+                    <a href="https://github.com/fabio-rovai/brain-in-the-fish" rel="noopener" target="_blank" class="kit-card reveal" style="--i:2">
+                        <p class="mono"><span>Rust</span><span class="go">GitHub</span></p>
+                        <h3>Brain in the Fish</h3>
+                        <p>Score any document and prove every claim, with ontology-grounded verification.</p>
+                    </a>
+                    <a href="https://github.com/fabio-rovai/worldkernel" rel="noopener" target="_blank" class="kit-card reveal" style="--i:0">
+                        <p class="mono"><span>Python</span><span class="go">GitHub</span></p>
+                        <h3>WorldKernel</h3>
+                        <p>Benchmarks for world-model structure, including an off-diagonal kernel witness.</p>
+                    </a>
+                    <a href="https://github.com/fabio-rovai/ies-hqdm-crosswalk" rel="noopener" target="_blank" class="kit-card reveal" style="--i:1">
+                        <p class="mono"><span>Python</span><span class="go">GitHub</span></p>
+                        <h3>IES to HQDM Crosswalk</h3>
+                        <p>A certified axiom bridge between the Information Exchange Standard and HQDM for defence data.</p>
+                    </a>
+                    <a href="https://github.com/fabio-rovai/mcp-former" rel="noopener" target="_blank" class="kit-card reveal" style="--i:2">
+                        <p class="mono"><span>Python</span><span class="go">GitHub</span></p>
+                        <h3>mcp-former</h3>
+                        <p>Tooling for building and transforming Model Context Protocol servers.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bay bay-alt" id="experience">
+            <div class="wrap">
+                <header class="bay-head">
+                    <p class="bay-rule mono"><b>04</b><i></i>Experience</p>
+                    <h2 class="display reveal">Experience.</h2>
+                </header>
+                <ul class="record">
+                    <li class="reveal"><span class="mono">2026 to present</span><div><h3>Researcher, Food Loss and Waste data taxonomy</h3><p>Waste and Resources Action Programme (WRAP)</p></div></li>
+                    <li class="reveal"><span class="mono">2026</span><div><h3>Research Lead, Finance and Health Lab</h3><p>Fintech Scotland, 2026 cohort</p></div></li>
+                    <li class="reveal"><span class="mono">2025 to 2026</span><div><h3>Researcher</h3><p>Kalgera. Ontology-based financial crime and transaction risk scoring.</p></div></li>
+                    <li class="reveal"><span class="mono">2025 to 2026</span><div><h3>Project Lead, AI for Creative Industries</h3><p>Innovate UK BridgeAI</p></div></li>
+                    <li class="reveal"><span class="mono">2025 to 2026</span><div><h3>Researcher, Testing Land Valuation Methodologies</h3><p>Welsh Government</p></div></li>
+                    <li class="reveal"><span class="mono">2025</span><div><h3>Project Manager, AI-driven tool for ontology extensions</h3><p>National Digital Twin Programme</p></div></li>
+                    <li class="reveal"><span class="mono">2024 to 2025</span><div><h3>Researcher</h3><p>Etiq AI. Adversarial red-teaming of retrieval-augmented generation pipelines.</p></div></li>
+                    <li class="reveal"><span class="mono">2023 to 2025</span><div><h3>Researcher</h3><p>The Alan Turing Institute. Large language models for cyber defence.</p></div></li>
+                    <li class="reveal"><span class="mono">2021 to 2025</span><div><h3>Associate Lecturer</h3><p>University of the Arts London</p></div></li>
+                    <li class="reveal"><span class="mono">2021 to present</span><div><h3>Co-founder</h3><p>The Tesseract Academy</p></div></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="wrap">
+                <p class="bay-rule mono"><b>05</b><i></i>Contact</p>
+                <h2 class="display reveal">Get in touch.</h2>
+                <p class="lede reveal" style="--i:1">For research collaborations, speaking, advisory work, or anything involving ontologies and verifiable AI.</p>
+                <div class="contact-links reveal" style="--i:2">
+                    <a href="mailto:fabio@fabiorovai.com" class="btn btn-molten">fabio@fabiorovai.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+                    <a href="https://www.linkedin.com/in/fabiorovai/" rel="me noopener" target="_blank" class="btn btn-steel">LinkedIn</a>
+                    <a href="https://github.com/fabio-rovai" rel="me noopener" target="_blank" class="btn btn-steel">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="foot">
+        <div class="wrap">
+            <div class="foot-word" aria-hidden="true"></div>
+            <div class="foot-grid">
+                <p class="legal"><strong>Registered company</strong>Rovai Heavy Industries is the trading name of Fabio Rovai Ltd, a company registered in England and Wales, number 13809380.</p>
+                <nav class="foot-links" aria-label="Footer">
+                    <a href="/">Home</a>
+                    <a href="https://www.linkedin.com/in/fabiorovai/" rel="me noopener" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/fabio-rovai" rel="me noopener" target="_blank">GitHub</a>
+                    <a href="#main">Back to top</a>
+                </nav>
+            </div>
+            <div class="foot-base mono">
+                <p>&copy; 2026 Rovai Heavy Industries. London, UK.</p>
+                <p>Heavy industry for machine reasoning</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        const toggle = document.querySelector('.nav-toggle');
-        toggle.addEventListener('click', function () {
-            const open = document.querySelector('.nav-links').classList.toggle('open');
-            this.classList.toggle('active');
-            this.setAttribute('aria-expanded', open ? 'true' : 'false');
-        });
-
-        window.addEventListener('scroll', () => {
-            document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 50);
-        });
-    </script>
+    <script src="/assets/forge.js" defer></script>
+    <script src="/assets/site.js" defer onerror="document.documentElement.classList.remove('js')"></script>
 
 </body>
 </html>

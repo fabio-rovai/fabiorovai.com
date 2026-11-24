@@ -1,25 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabio Rovai Ltd: Technology, Intelligence, Education</title>
-    <meta name="description" content="Fabio Rovai Ltd is a multi-venture company working across AI, data science, education, open-source technology, and research.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rovai Heavy Industries | Heavy industry for machine reasoning</title>
+    <meta name="description" content="Rovai Heavy Industries builds ontologies, reasoning engines and verification software for AI systems that have to be right. London.">
+    <meta name="theme-color" content="#0b0a09">
     <link rel="canonical" href="https://fabiorovai.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Rovai Heavy Industries">
+    <meta property="og:title" content="Rovai Heavy Industries">
+    <meta property="og:description" content="Heavy industry for machine reasoning. Ontologies, reasoning engines and verification tools, built in London.">
+    <meta property="og:url" content="https://fabiorovai.com/">
+    <meta property="og:image" content="https://fabiorovai.com/assets/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Rovai Heavy Industries: heavy industry for machine reasoning, set over an abstract field of contour lines that glow orange round a hot centre.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rovai Heavy Industries">
+    <meta name="twitter:description" content="Heavy industry for machine reasoning. Ontologies, reasoning engines and verification tools, built in London.">
+    <meta name="twitter:image" content="https://fabiorovai.com/assets/og.jpg">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="/assets/fonts/saira-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/plex-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/rovai.css">
+    <script>document.documentElement.classList.add('js');</script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "@id": "https://fabiorovai.com/#organization",
-      "name": "Fabio Rovai Ltd",
+      "name": "Rovai Heavy Industries",
+      "legalName": "Fabio Rovai Ltd",
+      "alternateName": "Fabio Rovai Ltd",
       "url": "https://fabiorovai.com/",
-      "description": "Fabio Rovai Ltd is a multi-venture company working across AI, data science, education, open-source technology, and research.",
+      "logo": "https://fabiorovai.com/assets/mark.png",
+      "image": "https://fabiorovai.com/assets/og.jpg",
+      "description": "Rovai Heavy Industries builds ontologies, reasoning engines and verification software for AI systems that have to be right. London.",
+      "foundingDate": "2021",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "London",
@@ -45,271 +66,402 @@
     }
     </script>
 </head>
-<body>
+<body class="page-home">
 
-    <nav class="nav">
-        <div class="nav-inner">
-            <a href="#" class="nav-logo">Fabio Rovai <span>Ltd</span></a>
-            <button class="nav-toggle" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#ventures">Ventures</a></li>
-                <li><a href="#technology">Technology</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="/about/">Fabio Rovai</a></li>
-                <li><a href="#careers">Careers</a></li>
-                <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
-            </ul>
-        </div>
-    </nav>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <header class="hero">
-        <div class="hero-inner">
-            <p class="hero-tag">Technology &middot; Intelligence &middot; Education</p>
-            <h1>We build things that <br class="desktop-only">make industries smarter.</h1>
-            <p class="hero-sub">Fabio Rovai Ltd is a multi-venture company working across artificial intelligence, education, open-source technology, and applied research.</p>
-            <div class="hero-actions">
-                <a href="#ventures" class="btn btn-primary">Our Ventures</a>
-                <a href="#contact" class="btn btn-outline">Work With Us</a>
-            </div>
+    <header class="nav" id="nav">
+        <div class="nav-bar">
+            <a class="brand" href="#top" aria-label="Rovai Heavy Industries, home">
+                <svg class="brand-nut" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M22 12l-5 8.66H7L2 12l5-8.66h10zM12 7.8a4.2 4.2 0 1 0 0 8.4 4.2 4.2 0 0 0 0-8.4z"/></svg>
+                <span class="brand-name">Rovai <span>Heavy Industries</span></span>
+            </a>
+            <nav aria-label="Primary">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#software">Software</a></li>
+                    <li><a href="#sectors">Sectors</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#latest">Latest</a></li>
+                    <li><a href="#company">Company</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><i></i><i></i></button>
         </div>
+        <div class="nav-progress" aria-hidden="true"></div>
     </header>
 
-    <section id="ventures" class="section ventures">
-        <div class="container">
-            <p class="section-tag">What We Do</p>
-            <h2>Four divisions. One mission.</h2>
-            <p class="section-sub">Like the best conglomerates, we operate across industries, connected by a shared commitment to rigour, craft, and impact.</p>
+    <main id="main">
 
-            <div class="venture-grid">
+        <section class="hero" data-field>
+            <canvas class="hero-gl" aria-hidden="true"></canvas>
+            <div class="hero-inner">
+                <p class="hero-eyebrow mono">Rovai Heavy Industries</p>
+                <h1 class="hero-line">Heavy industry for machine reasoning</h1>
+                <p class="hero-sub">Ontologies, reasoning engines and verification software for AI systems that have to be right.</p>
+                <div class="hero-actions">
+                    <a href="#software" class="btn btn-molten">Our software <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+                    <a href="#contact" class="btn btn-steel">Get in touch</a>
+                </div>
+            </div>
+            <p class="hero-cue mono" aria-hidden="true">Scroll<i></i></p>
+        </section>
 
-                <div class="venture-card">
-                    <div class="venture-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-                    </div>
-                    <h3>AI &amp; Data Science</h3>
-                    <p>Strategy, implementation, and governance for organisations adopting AI. From boardroom to production pipeline.</p>
-                    <ul class="venture-tags">
-                        <li>Machine Learning</li>
-                        <li>LLMs</li>
-                        <li>Responsible AI</li>
-                        <li>Data Strategy</li>
+        <div class="floor">
+
+            <section class="featured" id="featured">
+                <div class="wrap featured-head">
+                    <h2 class="mono">Featured work</h2>
+                    <div class="chips"><button class="chip" type="button" data-go="f-oo" aria-current="true">Open Ontologies</button><button class="chip" type="button" data-go="f-tardygrada" aria-current="false">Tardygrada</button><button class="chip" type="button" data-go="f-bitf" aria-current="false">Brain in the Fish</button><button class="chip" type="button" data-go="f-ies" aria-current="false">IES and HQDM</button><button class="chip" type="button" data-go="f-laundering" aria-current="false">Assurance Laundering</button><button class="chip" type="button" data-go="f-dcat" aria-current="false">DCAT-US</button><button class="chip" type="button" data-go="f-land" aria-current="false">Land valuation</button><button class="chip" type="button" data-go="f-curriculum" aria-current="false">Curriculum</button></div>
+                </div>
+                <div class="reel">
+                    <article class="feature" id="f-oo">
+                        <div class="feature-art"><svg class="fig" viewBox="0 0 400 400" role="img" aria-label="Three wheels of different sizes turning against one another: the reasoner, the validator and the query engine that Open Ontologies runs in one binary."><g class="run spin fd" style="transform-origin:140px 248px;--t:64s;--d:500"><circle class="b" cx="140" cy="248" r="76" stroke-dasharray="2 10"/><path class="b" d="M140 248H236"/><circle class="bf" cx="236" cy="248" r="2.6"/></g><circle class="a ink" pathLength="1" cx="140" cy="248" r="96" style="--d:0"/><circle class="bf fd" cx="140" cy="248" r="2" style="--d:500"/><g class="run spin rev fd" style="transform-origin:288.5px 194px;--t:41.33s;--d:750"><circle class="b" cx="288.5" cy="194" r="46" stroke-dasharray="2 10"/><path class="b" d="M288.5 194H350.5"/><circle class="bf" cx="350.5" cy="194" r="2.6"/></g><circle class="a ink" pathLength="1" cx="288.5" cy="194" r="62" style="--d:250"/><circle class="bf fd" cx="288.5" cy="194" r="2" style="--d:750"/><g class="run spin fd" style="transform-origin:314.9px 95.5px;--t:26.67s;--d:1000"><circle class="b" cx="314.9" cy="95.5" r="26" stroke-dasharray="2 10"/><path class="b" d="M314.9 95.5H354.9"/><circle class="bf" cx="354.9" cy="95.5" r="2.6"/></g><circle class="a ink" pathLength="1" cx="314.9" cy="95.5" r="40" style="--d:500"/><circle class="bf fd" cx="314.9" cy="95.5" r="2" style="--d:1000"/><circle class="hf fd run beat" cx="230.2" cy="215.2" r="3.4" style="--d:1300"/><circle class="hf fd run beat" cx="304.5" cy="134.1" r="3.4" style="--d:1500;animation-delay:-1.6s"/><text class="fd" x="44" y="372" style="--d:1500">Reasoner / OWL 2 DL</text><text class="fd" x="356" y="282" text-anchor="end" style="--d:1600">Validator / SHACL</text><text class="fd" x="262" y="62" text-anchor="end" style="--d:1700">Query / SPARQL</text></svg></div>
+                        <a class="feature-link" href="https://github.com/fabio-rovai/open-ontologies" target="_blank" rel="noopener">
+                            <div class="feature-tag">
+                                <p class="mono">Open Ontologies</p>
+                                <h3 class="feature-title">The ontology engine built for AI agents</h3>
+                                <p class="feature-text">OWL 2 DL reasoning, SHACL validation and SPARQL in one Rust binary, served over MCP.</p>
+                            </div>
+                            <span class="feature-go">View on GitHub</span>
+                        </a>
+                    </article>
+                    <article class="feature" id="f-tardygrada">
+                        <div class="feature-art"><svg class="fig" viewBox="0 0 400 400" role="img" aria-label="Eight concentric rings with a point travelling from the outside to the centre: a claim passing the eight verification layers of Tardygrada."><path class="b fd" d="M8 200H180" stroke-dasharray="2 7" style="--d:900"/><path class="b fd" d="M220 200H392" style="--d:900"/><circle class="b ink run ring" pathLength="1" cx="200" cy="200" r="144" style="--d:0;--k:1.12"/><circle class="b ink run ring" pathLength="1" cx="200" cy="200" r="126.5" style="--d:90;--k:1.53"/><circle class="b ink run ring" pathLength="1" cx="200" cy="200" r="109" style="--d:180;--k:1.94"/><circle class="b ink run ring" pathLength="1" cx="200" cy="200" r="91.5" style="--d:270;--k:2.34"/><circle class="b ink run ring" pathLength="1" cx="200" cy="200" r="74" style="--d:360;--k:2.75"/><circle class="b ink run ring" pathLength="1" cx="200" cy="200" r="56.5" style="--d:450;--k:3.16"/><circle class="b ink run ring" pathLength="1" cx="200" cy="200" r="39" style="--d:540;--k:3.57"/><circle class="b ink run ring" pathLength="1" cx="200" cy="200" r="21.5" style="--d:630;--k:3.98"/><circle class="hf fd" cx="200" cy="200" r="3.2" style="--d:1100"/><g class="run probe" style="transform-origin:200px 200px"><circle class="hf" cx="200" cy="200" r="4"/><circle class="h" cx="200" cy="200" r="9" style="opacity:.4"/></g><text class="fd" x="8" y="189" style="--d:1300">Claim</text><text class="fd" x="392" y="189" text-anchor="end" style="--d:1400">Verdict</text></svg></div>
+                        <a class="feature-link" href="https://github.com/fabio-rovai/tardygrada" target="_blank" rel="noopener">
+                            <div class="feature-tag">
+                                <p class="mono">Tardygrada</p>
+                                <h3 class="feature-title">A verified runtime for AI agents</h3>
+                                <p class="feature-text">Every claim passes eight layers of verification before it counts. No LLM judges an LLM.</p>
+                            </div>
+                            <span class="feature-go">View on GitHub</span>
+                        </a>
+                    </article>
+                    <article class="feature" id="f-bitf">
+                        <div class="feature-art"><svg class="fig" viewBox="0 0 400 400" role="img" aria-label="Nine lines of a document read from top to bottom, each one marked as proven, with a score filling beneath: how Brain in the Fish checks a document."><path class="b ink run row" pathLength="1" d="M70 84H280" style="--d:0;--k:0.36"/><circle class="b fd run tick" cx="322" cy="84" r="3.5" style="--d:600;--k:0.36"/><path class="b ink run row" pathLength="1" d="M70 110H250" style="--d:70;--k:0.88"/><circle class="b fd run tick" cx="322" cy="110" r="3.5" style="--d:670;--k:0.88"/><path class="b ink run row" pathLength="1" d="M70 136H270" style="--d:140;--k:1.40"/><circle class="b fd run tick" cx="322" cy="136" r="3.5" style="--d:740;--k:1.40"/><path class="b ink run row" pathLength="1" d="M70 162H220" style="--d:210;--k:1.93"/><circle class="b fd run tick" cx="322" cy="162" r="3.5" style="--d:810;--k:1.93"/><path class="b ink run row" pathLength="1" d="M70 188H285" style="--d:280;--k:2.45"/><circle class="b fd run tick" cx="322" cy="188" r="3.5" style="--d:880;--k:2.45"/><path class="b ink run row" pathLength="1" d="M70 214H240" style="--d:350;--k:2.97"/><circle class="b fd run tick" cx="322" cy="214" r="3.5" style="--d:950;--k:2.97"/><path class="b ink run row" pathLength="1" d="M70 240H265" style="--d:420;--k:3.49"/><circle class="b fd run tick" cx="322" cy="240" r="3.5" style="--d:1020;--k:3.49"/><path class="b ink run row" pathLength="1" d="M70 266H210" style="--d:490;--k:4.01"/><circle class="b fd run tick" cx="322" cy="266" r="3.5" style="--d:1090;--k:4.01"/><path class="b ink run row" pathLength="1" d="M70 292H275" style="--d:560;--k:4.53"/><circle class="b fd run tick" cx="322" cy="292" r="3.5" style="--d:1160;--k:4.53"/><path class="h run scan" d="M52 66H348"/><path class="b fd" d="M70 340H330" style="--d:1200"/><path class="h run score" d="M70 340H330" style="transform-origin:70px 340px;stroke-width:2"/><text class="fd" x="70" y="58" style="--d:1300">Document</text><text class="fd" x="322" y="58" text-anchor="middle" style="--d:1400">Proof</text><text class="fd" x="70" y="364" style="--d:1500">Score</text></svg></div>
+                        <a class="feature-link" href="https://github.com/fabio-rovai/brain-in-the-fish" target="_blank" rel="noopener">
+                            <div class="feature-tag">
+                                <p class="mono">Brain in the Fish</p>
+                                <h3 class="feature-title">Score any document. Prove every claim.</h3>
+                                <p class="feature-text">Document verification grounded in an ontology.</p>
+                            </div>
+                            <span class="feature-go">View on GitHub</span>
+                        </a>
+                    </article>
+                    <article class="feature" id="f-ies">
+                        <div class="feature-art"><svg class="fig" viewBox="0 0 400 400" role="img" aria-label="Two columns of terms joined by lines, two of the lines crossing and one term on each side left without a counterpart: a crosswalk between two ontologies."><path class="b ink" pathLength="1" d="M120 80L280 80" style="--d:300"/><path class="h ink" pathLength="1" d="M120 120L280 160" style="--d:420"/><path class="h ink" pathLength="1" d="M120 160L280 120" style="--d:540"/><path class="b ink" pathLength="1" d="M120 200L280 200" style="--d:660"/><path class="h ink" pathLength="1" d="M120 240L280 280" style="--d:780"/><path class="h ink" pathLength="1" d="M120 280L280 240" style="--d:900"/><circle class="bf fd" cx="120" cy="80" r="3" style="--d:0"/><circle class="bf fd" cx="280" cy="80" r="3" style="--d:0"/><circle class="bf fd" cx="120" cy="120" r="3" style="--d:60"/><circle class="bf fd" cx="280" cy="120" r="3" style="--d:60"/><circle class="bf fd" cx="120" cy="160" r="3" style="--d:120"/><circle class="bf fd" cx="280" cy="160" r="3" style="--d:120"/><circle class="bf fd" cx="120" cy="200" r="3" style="--d:180"/><circle class="bf fd" cx="280" cy="200" r="3" style="--d:180"/><circle class="bf fd" cx="120" cy="240" r="3" style="--d:240"/><circle class="bf fd" cx="280" cy="240" r="3" style="--d:240"/><circle class="bf fd" cx="120" cy="280" r="3" style="--d:300"/><circle class="bf fd" cx="280" cy="280" r="3" style="--d:300"/><circle class="bf fd" cx="120" cy="320" r="3" style="--d:360"/><circle class="bf fd" cx="280" cy="320" r="3" style="--d:360"/><circle class="h fd run beat" cx="120" cy="320" r="8" style="--d:1300"/><circle class="h fd run beat" cx="280" cy="320" r="8" style="--d:1400;animation-delay:-1.6s"/><text class="fd" x="120" y="50" text-anchor="middle" style="--d:900">IES</text><text class="fd" x="280" y="50" text-anchor="middle" style="--d:1000">HQDM</text><text class="fd" x="200" y="360" text-anchor="middle" style="--d:1500">No counterpart</text></svg></div>
+                        <a class="feature-link" href="https://github.com/fabio-rovai/ies-hqdm-crosswalk" target="_blank" rel="noopener">
+                            <div class="feature-tag">
+                                <p class="mono">IES and HQDM</p>
+                                <h3 class="feature-title">The first public crosswalk between two 4D defence ontologies</h3>
+                                <p class="feature-text">Correspondences between the UK Information Exchange Standard and HQDM, with a record of where the two diverge.</p>
+                            </div>
+                            <span class="feature-go">View on GitHub</span>
+                        </a>
+                    </article>
+                    <article class="feature" id="f-laundering">
+                        <div class="feature-art"><svg class="fig" viewBox="0 0 400 400" role="img" aria-label="A chain of six rings, one of them broken: the level of assurance a credential really carries is set by its weakest link."><circle class="a ink" pathLength="1" cx="70" cy="200" r="34" style="--d:0"/><circle class="a ink" pathLength="1" cx="122" cy="200" r="34" style="--d:110"/><circle class="a ink" pathLength="1" cx="174" cy="200" r="34" style="--d:220"/><circle class="h fd run beat" cx="226" cy="200" r="34" stroke-dasharray="3 6" style="--d:700"/><circle class="a ink" pathLength="1" cx="278" cy="200" r="34" style="--d:440"/><circle class="a ink" pathLength="1" cx="330" cy="200" r="34" style="--d:550"/><path class="b fd" d="M226 240V262" style="--d:1100"/><text class="fd" x="226" y="280" text-anchor="middle" style="--d:1200">Weakest link</text><path class="b fd" d="M36 138H364" stroke-dasharray="2 7" style="--d:900"/><text class="fd" x="36" y="126" style="--d:1000">Claimed assurance</text></svg></div>
+                        <a class="feature-link" href="https://github.com/fabio-rovai/assurance-laundering" target="_blank" rel="noopener">
+                            <div class="feature-tag">
+                                <p class="mono">Assurance Laundering</p>
+                                <h3 class="feature-title">When a compliant-looking credential carries no assurance</h3>
+                                <p class="feature-text">A cross-standard ontology and machine-checked proofs in Lean 4, presented at TDI 2026 at the Alan Turing Institute.</p>
+                            </div>
+                            <span class="feature-go">View on GitHub</span>
+                        </a>
+                    </article>
+                    <article class="feature" id="f-dcat">
+                        <div class="feature-art"><svg class="fig" viewBox="0 0 400 400" role="img" aria-label="A schema tree on the left becomes three graph statements on the right: a metadata profile bound to RDF from its own schema."><path class="b ink" pathLength="1" d="M70 200L150 120M70 200H150M70 200L150 280" style="--d:0"/><circle class="bf fd" cx="70" cy="200" r="4" style="--d:300"/><circle class="bf fd" cx="150" cy="120" r="3" style="--d:400"/><path class="h fd" d="M166 120H232" stroke-dasharray="2 6" style="--d:800"/><path class="a ink" pathLength="1" d="M250 120H330" style="--d:1000"/><circle class="bf fd" cx="250" cy="120" r="4" style="--d:1100"/><circle class="bf fd" cx="330" cy="120" r="4" style="--d:1200"/><circle class="bf fd" cx="150" cy="200" r="3" style="--d:480"/><path class="h fd" d="M166 200H232" stroke-dasharray="2 6" style="--d:920"/><path class="a ink" pathLength="1" d="M250 200H330" style="--d:1120"/><circle class="bf fd" cx="250" cy="200" r="4" style="--d:1220"/><circle class="bf fd" cx="330" cy="200" r="4" style="--d:1320"/><circle class="bf fd" cx="150" cy="280" r="3" style="--d:560"/><path class="h fd" d="M166 280H232" stroke-dasharray="2 6" style="--d:1040"/><path class="a ink" pathLength="1" d="M250 280H330" style="--d:1240"/><circle class="bf fd" cx="250" cy="280" r="4" style="--d:1340"/><circle class="bf fd" cx="330" cy="280" r="4" style="--d:1440"/><text class="fd" x="70" y="70" style="--d:600">JSON Schema</text><text class="fd" x="330" y="70" text-anchor="end" style="--d:1400">RDF</text></svg></div>
+                        <a class="feature-link" href="https://github.com/fabio-rovai/dcat-us-binding" target="_blank" rel="noopener">
+                            <div class="feature-tag">
+                                <p class="mono">DCAT-US</p>
+                                <h3 class="feature-title">A national metadata profile, validated against its own published artifacts</h3>
+                                <p class="feature-text">A JSON-LD context and SHACL shapes for DCAT-US 3.0, generated from the profile&#x27;s own JSON Schema.</p>
+                            </div>
+                            <span class="feature-go">View on GitHub</span>
+                        </a>
+                    </article>
+                    <article class="feature" id="f-land">
+                        <div class="feature-art"><svg class="fig" viewBox="0 0 400 400" role="img" aria-label="A map of land parcels with one parcel picked out and five marks beneath it: one parcel valued five ways."><path class="a ink" pathLength="1" d="M70 80H330V320H70Z" style="--d:0"/><path class="b ink" pathLength="1" d="M150 80V320M235 80V200M270 200V320M70 160H235M150 200H330M70 255H150M270 262H330" style="--d:400"/><path class="h ink" pathLength="1" d="M150 200H270V320H150Z" style="--d:1100"/><path class="b fd" d="M150 350H168" style="--d:1500;stroke-width:2"/><path class="b fd" d="M176 350H194" style="--d:1590;stroke-width:2"/><path class="h fd" d="M202 350H220" style="--d:1680;stroke-width:2"/><path class="b fd" d="M228 350H246" style="--d:1770;stroke-width:2"/><path class="b fd" d="M254 350H272" style="--d:1860;stroke-width:2"/><text class="fd" x="70" y="62" style="--d:900">Parcels</text><text class="fd" x="150" y="374" style="--d:1900">Five methods</text></svg></div>
+                        <a class="feature-link" href="https://www.gov.wales/testing-land-valuation-methods-tesseract-academy" target="_blank" rel="noopener">
+                            <div class="feature-tag">
+                                <p class="mono">Land valuation</p>
+                                <h3 class="feature-title">Five ways to value land, tested for the Welsh Government</h3>
+                                <p class="feature-text">Research for the land value tax evidence programme, published on GOV.WALES in March 2026.</p>
+                            </div>
+                            <span class="feature-go">Read on GOV.WALES</span>
+                        </a>
+                    </article>
+                    <article class="feature" id="f-curriculum">
+                        <div class="feature-art"><svg class="fig" viewBox="0 0 400 400" role="img" aria-label="Nine rows of dots, 147 in all: nine courses and their lessons."><path class="a fd" d="M70 92H294" stroke-dasharray="0.1 13.9" style="--d:200;stroke-width:4"/><path class="a fd" d="M70 120H266" stroke-dasharray="0.1 13.9" style="--d:310;stroke-width:4"/><path class="a fd" d="M70 148H308" stroke-dasharray="0.1 13.9" style="--d:420;stroke-width:4"/><path class="a fd" d="M70 176H252" stroke-dasharray="0.1 13.9" style="--d:530;stroke-width:4"/><path class="a fd" d="M70 204H280" stroke-dasharray="0.1 13.9" style="--d:640;stroke-width:4"/><path class="a fd" d="M70 232H322" stroke-dasharray="0.1 13.9" style="--d:750;stroke-width:4"/><path class="a fd" d="M70 260H266" stroke-dasharray="0.1 13.9" style="--d:860;stroke-width:4"/><path class="a fd" d="M70 288H294" stroke-dasharray="0.1 13.9" style="--d:970;stroke-width:4"/><path class="a fd" d="M70 316H280" stroke-dasharray="0.1 13.9" style="--d:1080;stroke-width:4"/><text class="fd" x="70" y="62" style="--d:0">Nine courses</text><text class="fd" x="330" y="62" text-anchor="end" style="--d:1300">147 lessons</text><path class="h fd" d="M70 352H330" style="--d:1400"/></svg></div>
+                        <a class="feature-link" href="https://github.com/fabio-rovai/ontology-curriculum" target="_blank" rel="noopener">
+                            <div class="feature-tag">
+                                <p class="mono">Curriculum</p>
+                                <h3 class="feature-title">An ontology engineering curriculum, published as an ontology</h3>
+                                <p class="feature-text">Nine free courses and 147 lessons in OWL 2 and SKOS, each crosswalked to the standards it teaches.</p>
+                            </div>
+                            <span class="feature-go">View on GitHub</span>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="statement" aria-label="What we build">
+                <div class="wrap">
+                    <p class="statement-text">We build the load-bearing parts of AI systems: the ontologies, the engines that reason over them, and the software that checks an AI's work before anyone relies on it.</p>
+                </div>
+            </section>
+
+            <section class="bay" id="software">
+                <div class="wrap">
+                    <h2 class="bay-rule mono"><b>Our software</b></h2>
+                    <ul class="wares">
+                        <li class="reveal" style="--i:0"><a class="ware" href="https://github.com/fabio-rovai/open-ontologies" target="_blank" rel="noopener"><span class="ware-name">Open Ontologies</span><span class="ware-no mono">/0.1</span><span class="ware-desc">Plan, apply and roll back changes to a production ontology, with a proof an auditor can re-check</span><svg class="ware-go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li>
+                        <li class="reveal" style="--i:1"><a class="ware" href="https://github.com/fabio-rovai/tardygrada" target="_blank" rel="noopener"><span class="ware-name">Tardygrada</span><span class="ware-no mono">/0.2</span><span class="ware-desc">Run AI agents whose every claim passes eight layers of verification before it counts</span><svg class="ware-go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li>
+                        <li class="reveal" style="--i:2"><a class="ware" href="https://github.com/fabio-rovai/brain-in-the-fish" target="_blank" rel="noopener"><span class="ware-name">Brain in the Fish</span><span class="ware-no mono">/0.3</span><span class="ware-desc">Score any document and prove every claim in it</span><svg class="ware-go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li>
+                        <li class="reveal" style="--i:0"><a class="ware" href="https://github.com/fabio-rovai/worldproof" target="_blank" rel="noopener"><span class="ware-name">WorldProof</span><span class="ware-no mono">/0.4</span><span class="ware-desc">Compile ontologies and data into world models whose every inference carries a machine-checkable certificate</span><svg class="ware-go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li>
+                        <li class="reveal" style="--i:1"><a class="ware" href="https://github.com/fabio-rovai/mcp-former" target="_blank" rel="noopener"><span class="ware-name">mcp-former</span><span class="ware-no mono">/0.5</span><span class="ware-desc">Put existing software behind a verification gate, so AI agents can drive it safely</span><svg class="ware-go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li>
                     </ul>
                 </div>
+            </section>
 
-                <div class="venture-card">
-                    <div class="venture-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <section class="bay bay-alt" id="sectors">
+                <div class="wrap">
+                    <header class="bay-head">
+                        <p class="bay-rule mono"><b>Open work by sector</b></p>
+                        <h2 class="display reveal">Assurance for the registers and standards that institutions run on</h2>
+                        <p class="lede reveal" style="--i:1">More than 90 public repositories: ontologies, crosswalks and audits that anyone can run, re-check and build on.</p>
+                    </header>
+                    <div class="sectors">
+                        <div class="sector reveal" style="--i:0">
+                            <h3 class="mono">Financial services</h3>
+                            <ul><li><a href="https://github.com/fabio-rovai/investment-fund-ontology" target="_blank" rel="noopener">Investment fund ontology</a></li><li><a href="https://github.com/fabio-rovai/securities-register-ontology" target="_blank" rel="noopener">Securities register ontology</a></li><li><a href="https://github.com/fabio-rovai/iso17442" target="_blank" rel="noopener">Legal entity identifier conformance</a></li><li><a href="https://github.com/fabio-rovai/opensanctions-identifier-assurance" target="_blank" rel="noopener">Sanctions identifier assurance</a></li><li><a href="https://github.com/fabio-rovai/ixbrl-disclosure-benchmark" target="_blank" rel="noopener">Company accounts benchmark</a></li><li><a href="https://github.com/fabio-rovai/pension-illustration-lab" target="_blank" rel="noopener">Pension illustration engine</a></li><li><a href="https://github.com/fabio-rovai/qollateral" target="_blank" rel="noopener">Collateral optimisation benchmark</a></li><li><a href="https://github.com/fabio-rovai/chain-control-ontology" target="_blank" rel="noopener">On-chain control census</a></li></ul>
+                        </div>
+                        <div class="sector reveal" style="--i:1">
+                            <h3 class="mono">Government and public data</h3>
+                            <ul><li><a href="https://github.com/fabio-rovai/uk-register-ontology" target="_blank" rel="noopener">UK register ontology</a></li><li><a href="https://github.com/fabio-rovai/italy-register-ontology" target="_blank" rel="noopener">Italy register ontology</a></li><li><a href="https://github.com/fabio-rovai/korea-register-ontology" target="_blank" rel="noopener">Korea register ontology</a></li><li><a href="https://github.com/fabio-rovai/taiwan-register-ontology" target="_blank" rel="noopener">Taiwan register ontology</a></li><li><a href="https://github.com/fabio-rovai/scotland-land-register-ontology" target="_blank" rel="noopener">Scotland land register ontology</a></li><li><a href="https://github.com/fabio-rovai/open-data-catalog-ontology" target="_blank" rel="noopener">Open data catalogue assurance</a></li><li><a href="https://github.com/fabio-rovai/dcat-us-binding" target="_blank" rel="noopener">DCAT-US binding</a></li><li><a href="https://github.com/fabio-rovai/semantic-asset-register" target="_blank" rel="noopener">US federal vocabulary assessment</a></li><li><a href="https://github.com/fabio-rovai/uk-evaluation-atlas" target="_blank" rel="noopener">UK evaluation atlas</a></li><li><a href="https://github.com/fabio-rovai/uk-consultation-corpus" target="_blank" rel="noopener">UK consultation corpus</a></li></ul>
+                        </div>
+                        <div class="sector reveal" style="--i:2">
+                            <h3 class="mono">Defence and space</h3>
+                            <ul><li><a href="https://github.com/fabio-rovai/ies-hqdm-crosswalk" target="_blank" rel="noopener">IES and HQDM crosswalk</a></li><li><a href="https://github.com/fabio-rovai/ies4-space" target="_blank" rel="noopener">IES4 space extension</a></li><li><a href="https://github.com/fabio-rovai/space-metrics-crosswalk" target="_blank" rel="noopener">Space metrics crosswalk</a></li><li><a href="https://github.com/fabio-rovai/neurosymbolic-space-kg" target="_blank" rel="noopener">Space object knowledge graph</a></li><li><a href="https://github.com/fabio-rovai/CyberSim-LLM-Driven-Cybersecurity-Simulation-Framework" target="_blank" rel="noopener">Cyber simulation framework</a></li></ul>
+                        </div>
+                        <div class="sector reveal" style="--i:3">
+                            <h3 class="mono">Health and life sciences</h3>
+                            <ul><li><a href="https://github.com/fabio-rovai/health-dataset-catalogue-ontology" target="_blank" rel="noopener">Health dataset catalogue ontology</a></li><li><a href="https://github.com/fabio-rovai/health-data-linkage-ontology" target="_blank" rel="noopener">Health data linkage ontology</a></li><li><a href="https://github.com/fabio-rovai/biosurveillance-ontology" target="_blank" rel="noopener">Food safety alert ontology</a></li><li><a href="https://github.com/fabio-rovai/spectral-library-ontology" target="_blank" rel="noopener">Spectral library ontology</a></li><li><a href="https://github.com/fabio-rovai/sociotechnical-matrix-assurance" target="_blank" rel="noopener">Sociotechnical evaluation matrix</a></li></ul>
+                        </div>
+                        <div class="sector reveal" style="--i:0">
+                            <h3 class="mono">Law, regulation and standards</h3>
+                            <ul><li><a href="https://github.com/fabio-rovai/regulatory-instrument-register" target="_blank" rel="noopener">EU regulatory instrument register</a></li><li><a href="https://github.com/fabio-rovai/trade-remedy-ontology" target="_blank" rel="noopener">UK trade remedy ontology</a></li><li><a href="https://github.com/fabio-rovai/ai-management-system-assurance" target="_blank" rel="noopener">AI management system assurance</a></li><li><a href="https://github.com/fabio-rovai/certification-register-ontology" target="_blank" rel="noopener">Certification register ontology</a></li><li><a href="https://github.com/fabio-rovai/specification-conformance-ontology" target="_blank" rel="noopener">Specification conformance ontology</a></li><li><a href="https://github.com/fabio-rovai/oascheck" target="_blank" rel="noopener">OpenAPI conformance checks</a></li><li><a href="https://github.com/fabio-rovai/uk-algorithmic-transparency" target="_blank" rel="noopener">Algorithmic transparency records</a></li></ul>
+                        </div>
+                        <div class="sector reveal" style="--i:1">
+                            <h3 class="mono">Industry and logistics</h3>
+                            <ul><li><a href="https://github.com/fabio-rovai/construction-standards-crosswalks" target="_blank" rel="noopener">Construction standards crosswalks</a></li><li><a href="https://github.com/fabio-rovai/cargo-semantics" target="_blank" rel="noopener">Cargo data standards audit</a></li><li><a href="https://github.com/fabio-rovai/onerecord-domain-extension" target="_blank" rel="noopener">ONE Record domain extension</a></li><li><a href="https://github.com/fabio-rovai/machinery-semantics" target="_blank" rel="noopener">Machinery regulation standards</a></li><li><a href="https://github.com/fabio-rovai/scenario-register-ontology" target="_blank" rel="noopener">Road collision scenario registers</a></li><li><a href="https://github.com/fabio-rovai/enterprise-knowledge-ontology" target="_blank" rel="noopener">Enterprise knowledge ontology</a></li></ul>
+                        </div>
+                        <div class="sector reveal" style="--i:2">
+                            <h3 class="mono">Environment and climate</h3>
+                            <ul><li><a href="https://github.com/fabio-rovai/eo-verifiability-standard" target="_blank" rel="noopener">Earth observation verifiability standard</a></li><li><a href="https://github.com/fabio-rovai/nature-security-risk" target="_blank" rel="noopener">Nature-related security risk</a></li><li><a href="https://github.com/fabio-rovai/waste-vocab-crosswalk" target="_blank" rel="noopener">Waste vocabulary crosswalk</a></li><li><a href="https://github.com/fabio-rovai/payout-assurance-standard" target="_blank" rel="noopener">Parametric insurance payout standard</a></li></ul>
+                        </div>
+                        <div class="sector reveal" style="--i:3">
+                            <h3 class="mono">AI and research</h3>
+                            <ul><li><a href="https://github.com/fabio-rovai/geo-agent-guard" target="_blank" rel="noopener">Geospatial agent guard</a></li><li><a href="https://github.com/fabio-rovai/financebench-verification" target="_blank" rel="noopener">Financial answer verification</a></li><li><a href="https://github.com/fabio-rovai/worldkernel" target="_blank" rel="noopener">World model kernel</a></li><li><a href="https://github.com/fabio-rovai/keac-2026" target="_blank" rel="noopener">Knowledge engineering challenge entry</a></li><li><a href="https://github.com/fabio-rovai/scholarly-record-ontology" target="_blank" rel="noopener">Scholarly record ontology</a></li><li><a href="https://github.com/fabio-rovai/media-attention-ontology" target="_blank" rel="noopener">Media attention ontology</a></li><li><a href="https://github.com/fabio-rovai/obsidian-open-ontologies" target="_blank" rel="noopener">Open Ontologies for Obsidian</a></li></ul>
+                        </div>
                     </div>
-                    <h3>Training &amp; Education</h3>
-                    <p>Courses, workshops, and corporate programmes that turn teams into practitioners. 1,000+ professionals trained.</p>
-                    <ul class="venture-tags">
-                        <li>Corporate Training</li>
-                        <li>Higher Education</li>
-                        <li>AI Literacy</li>
-                        <li>Leadership</li>
+                </div>
+            </section>
+
+            <section class="bay" id="work">
+                <div class="wrap">
+                    <header class="bay-head">
+                        <p class="bay-rule mono"><b>Work delivered</b></p>
+                        <h2 class="display reveal">Research and engineering for public institutions</h2>
+                        <p class="lede reveal" style="--i:1">Engagements we have led, several of them with The Tesseract Academy.</p>
+                    </header>
+                    <ul class="cases">
+                        <li class="case reveal" style="--i:0">
+                            <p class="mono">Welsh Government</p>
+                            <h3>Five ways to value land, tested</h3>
+                            <p class="case-text">Research for the land value tax evidence programme. It tests five valuation approaches, including statistical valuation and machine learning, and was published on GOV.WALES in March 2026.</p>
+                            <a class="arrow-link" href="https://www.gov.wales/testing-land-valuation-methods-tesseract-academy" target="_blank" rel="noopener">Read on GOV.WALES</a>
+                        </li>
+                        <li class="case reveal" style="--i:1">
+                            <p class="mono">The Alan Turing Institute</p>
+                            <h3>Language agents for cyber defence</h3>
+                            <p class="case-text">Research on reinforcement-learning language agents in emulated networks for threat detection, from December 2023 to January 2025.</p>
+                        </li>
+                        <li class="case reveal" style="--i:0">
+                            <p class="mono">National Digital Twin Programme</p>
+                            <h3>An AI-driven tool for extending an ontology</h3>
+                            <p class="case-text">Ontology tooling built for the programme in 2025.</p>
+                        </li>
+                        <li class="case reveal" style="--i:1">
+                            <p class="mono">Innovate UK BridgeAI</p>
+                            <h3>AI for the creative industries</h3>
+                            <p class="case-text">A BridgeAI programme for the creative industries, led from 2025 to 2026.</p>
+                        </li>
+                    </ul>
+                    <div class="worked">
+                        <p class="bay-rule mono">Also worked with<i></i></p>
+                        <ul class="clients"><li class="reveal" style="--i:0">WRAP</li><li class="reveal" style="--i:1">Kalgera</li><li class="reveal" style="--i:2">Etiq AI</li><li class="reveal" style="--i:3">Fintech Scotland</li><li class="reveal" style="--i:4">University of the Arts London</li><li class="reveal" style="--i:5">NeurIPS</li></ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bay bay-alt" id="output">
+                <div class="wrap">
+                    <h2 class="bay-rule mono"><b>Output to date</b></h2>
+                    <div class="gauges reveal">
+                        <div class="gauge">
+                            <p class="counter" data-value="1000" data-suffix="+">1,000+</p>
+                            <p class="gauge-label mono">Professionals trained</p>
+                        </div>
+                        <div class="gauge">
+                            <p class="counter" data-value="58" data-suffix="+">58+</p>
+                            <p class="gauge-label mono">Public sector tenders</p>
+                        </div>
+                        <div class="gauge">
+                            <p class="counter" data-value="90" data-suffix="+">90+</p>
+                            <p class="gauge-label mono">Open repositories</p>
+                        </div>
+                        <div class="gauge">
+                            <p class="counter" data-value="2900" data-suffix="+">2,900+</p>
+                            <p class="gauge-label mono">GitHub stars, Open Ontologies</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bay" id="latest">
+                <div class="wrap">
+                    <header class="bay-head">
+                        <p class="bay-rule mono"><b>Latest</b></p>
+                        <h2 class="display reveal">Papers, proofs and publications</h2>
+                    </header>
+                    <ul class="news">
+                        <li class="reveal">
+                            <p class="mono">OM 2026<br>ISWC 2026, Bari</p>
+                            <div><h3>Consistency Is Not Coherence</h3><p class="news-text">The first public alignment of the IES, HQDM and BFO upper ontologies, accepted as a long paper at the 21st International Workshop on Ontology Matching.</p></div>
+                            <a class="arrow-link" href="https://arxiv.org/abs/2608.21914" target="_blank" rel="noopener">Read the paper</a>
+                        </li>
+                        <li class="reveal">
+                            <p class="mono">WASP 2026<br>AACL-IJCNLP 2026</p>
+                            <div><h3>Recovering Method Parameters from Protocol Prose</h3><p class="news-text">A workshop paper that defines the task, audits the extraction and sets out which comparisons the recovered parameters support.</p></div>
+                            <span></span>
+                        </li>
+                        <li class="reveal">
+                            <p class="mono">SEMANTiCS 2026<br>Ghent, 17 September 2026</p>
+                            <div><h3>Conformance Over Nothing</h3><p class="news-text">An accepted demonstration: a JSON-LD context and SHACL shapes for DCAT-US 3.0, generated out of the RDF binding already inside its own JSON Schema.</p></div>
+                            <a class="arrow-link" href="https://github.com/fabio-rovai/dcat-us-binding" target="_blank" rel="noopener">See the binding</a>
+                        </li>
+                        <li class="reveal">
+                            <p class="mono">TDI 2026<br>The Alan Turing Institute, 16 September 2026</p>
+                            <div><h3>Assurance Laundering</h3><p class="news-text">Lean theorems across eight credential stacks, giving the conditions under which a compliant-looking credential carries no assurance at all.</p></div>
+                            <a class="arrow-link" href="https://github.com/fabio-rovai/assurance-laundering" target="_blank" rel="noopener">See the proofs</a>
+                        </li>
+                        <li class="reveal">
+                            <p class="mono">GOV.WALES<br>17 March 2026</p>
+                            <div><h3>Testing land valuation methods</h3><p class="news-text">Published by the Welsh Government as part of its land value tax evidence programme.</p></div>
+                            <a class="arrow-link" href="https://www.gov.wales/testing-land-valuation-methods-tesseract-academy" target="_blank" rel="noopener">Read the report</a>
+                        </li>
                     </ul>
                 </div>
+            </section>
 
-                <div class="venture-card">
-                    <div class="venture-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                    </div>
-                    <h3>Technology</h3>
-                    <p>Open-source products and infrastructure for the AI ecosystem. Tools trusted by developers and researchers worldwide.</p>
-                    <ul class="venture-tags">
-                        <li>Open Source</li>
-                        <li>Rust</li>
-                        <li>Systems Programming</li>
-                        <li>MCP Servers</li>
+            <section class="bay bay-alt" id="company">
+                <div class="wrap">
+                    <header class="bay-head">
+                        <p class="bay-rule mono"><b>The company</b></p>
+                        <h2 class="display reveal">Four works, one group</h2>
+                        <p class="lede reveal" style="--i:1">Rovai Heavy Industries is a London company, established in 2021. Heavy industry makes the things everything else stands on, and that is the part of AI we build.</p>
+                    </header>
+                    <ul class="units">
+                        <li class="unit reveal" style="--i:0">
+                            <p class="mono">01</p>
+                            <svg class="unit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 6h9M6.3 8.2l4.4 7.6M17.7 8.2l-4.4 7.6"/></svg>
+                            <h3>Reasoning Works</h3>
+                            <p class="mono unit-kicker">AI and data science</p>
+                            <p class="unit-text">Strategy, implementation and governance for organisations adopting AI, from the boardroom to the production pipeline.</p>
+                            <ul class="tags"><li>Machine learning</li><li>LLMs</li><li>Responsible AI</li><li>Data strategy</li></ul>
+                        </li>
+                        <li class="unit reveal" style="--i:1">
+                            <p class="mono">02</p>
+                            <svg class="unit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v4.5c0 1.7 2.7 3 6 3s6-1.3 6-3V11"/><path d="M22 9v6"/></svg>
+                            <h3>Training School</h3>
+                            <p class="mono unit-kicker">Training and education</p>
+                            <p class="unit-text">Courses, workshops and corporate programmes that turn teams into practitioners. More than 1,000 professionals trained so far.</p>
+                            <ul class="tags"><li>Corporate training</li><li>Higher education</li><li>AI literacy</li><li>Leadership</li></ul>
+                        </li>
+                        <li class="unit reveal" style="--i:2">
+                            <p class="mono">03</p>
+                            <svg class="unit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6M13.5 4l-3 16"/></svg>
+                            <h3>Machine Shop</h3>
+                            <p class="mono unit-kicker">Technology</p>
+                            <p class="unit-text">Open-source products and infrastructure for AI systems, written in Rust and C and built in the open.</p>
+                            <ul class="tags"><li>Open source</li><li>Rust</li><li>Systems programming</li><li>MCP servers</li></ul>
+                        </li>
+                        <li class="unit reveal" style="--i:3">
+                            <p class="mono">04</p>
+                            <svg class="unit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v6.2L4.6 18.6A1.6 1.6 0 0 0 6 21h12a1.6 1.6 0 0 0 1.4-2.4L14 9.2V3"/><path d="M7.4 15h9.2"/></svg>
+                            <h3>Research Laboratories</h3>
+                            <p class="mono unit-kicker">Research</p>
+                            <p class="unit-text">Applied research, publications and academic partnerships, with work for the Alan Turing Institute and Innovate UK.</p>
+                            <ul class="tags"><li>NeurIPS</li><li>Ethics review</li><li>Public sector</li><li>Policy</li></ul>
+                        </li>
                     </ul>
                 </div>
+            </section>
 
-                <div class="venture-card">
-                    <div class="venture-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-                    </div>
-                    <h3>Research</h3>
-                    <p>Academic partnerships, publications, and applied research. From the Alan Turing Institute to Innovate UK.</p>
-                    <ul class="venture-tags">
-                        <li>NeurIPS</li>
-                        <li>Ethics Review</li>
-                        <li>Public Sector</li>
-                        <li>Policy</li>
-                    </ul>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <section id="technology" class="section technology">
-        <div class="container">
-            <p class="section-tag">Open Source</p>
-            <h2>Products &amp; Projects</h2>
-            <p class="section-sub">We build and maintain open-source tools used by developers and researchers.</p>
-
-            <div class="tech-grid">
-                <a href="https://github.com/fabio-rovai/tardygrada" target="_blank" class="tech-card">
-                    <h3>Tardygrada</h3>
-                    <p>Trust infrastructure for AI agents. Provenance, integrity, zero dependencies. Pure C.</p>
-                </a>
-                <a href="https://github.com/fabio-rovai/open-ontologies" target="_blank" class="tech-card">
-                    <h3>Open Ontologies</h3>
-                    <p>AI-native ontology engine. Rust MCP server with OWL2-DL reasoning, SHACL validation, SPARQL. No JVM.</p>
-                </a>
-                <a href="https://github.com/fabio-rovai/brain-in-the-fish" target="_blank" class="tech-card">
-                    <h3>Brain in the Fish</h3>
-                    <p>Score any document. Prove every claim. Ontology-grounded verification.</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section credibility">
-        <div class="container">
-            <div class="cred-grid">
-                <div class="cred-item">
-                    <span class="cred-number">1,000+</span>
-                    <span class="cred-label">Professionals trained</span>
-                </div>
-                <div class="cred-item">
-                    <span class="cred-number">58+</span>
-                    <span class="cred-label">Public sector tenders</span>
-                </div>
-                <div class="cred-item">
-                    <span class="cred-number">4</span>
-                    <span class="cred-label">Business divisions</span>
-                </div>
-                <div class="cred-item">
-                    <span class="cred-number">London</span>
-                    <span class="cred-label">Headquartered</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section partners">
-        <div class="container">
-            <p class="partners-label">Trusted by &amp; collaborated with</p>
-            <div class="partners-row">
-                <span>Alan Turing Institute</span>
-                <span>Innovate UK</span>
-                <span>Welsh Government</span>
-                <span>NeurIPS</span>
-                <span>UAL</span>
-                <span>Etiq AI</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="about-grid">
-                <div>
-                    <p class="section-tag">About</p>
-                    <h2>Built different.</h2>
-                    <p>Fabio Rovai Ltd is a London-based multi-venture company founded by Fabio Rovai. We don't fit neatly into one category, and that is by design.</p>
-                    <p>We work across AI consulting, education, open-source technology, and applied research. Our projects range from government AI strategy to building developer tools in Rust to reviewing ethics papers for NeurIPS.</p>
-                    <p>We believe the most interesting work happens at the intersection of disciplines. That's where we operate.</p>
-                </div>
-                <div class="about-details">
-                    <div class="about-detail">
-                        <h4>Founded</h4>
-                        <p>London, UK</p>
-                    </div>
-                    <div class="about-detail">
-                        <h4>Founder</h4>
-                        <p>Fabio Rovai, MSc</p>
-                    </div>
-                    <div class="about-detail">
-                        <h4>Expertise</h4>
-                        <p>Data Science &amp; AI, MSc, UAL<br>NeurIPS Ethics Reviewer<br>Associate Lecturer</p>
-                    </div>
-                    <div class="about-detail">
-                        <h4>Also</h4>
-                        <p>Co-founder, The Tesseract Academy<br>Innovate UK BridgeAI Project Lead</p>
-                    </div>
-                    <div class="about-detail">
-                        <h4>Profile</h4>
-                        <p><a href="/about/">Fabio Rovai: research, publications, and background</a></p>
+            <section class="careers" id="careers">
+                <div class="wrap">
+                    <div class="careers-panel">
+                        <div>
+                            <p class="bay-rule mono"><b>Careers</b></p>
+                            <h2 class="display reveal">Build the part everything else stands on</h2>
+                        </div>
+                        <div class="careers-side reveal" style="--i:1">
+                            <p>We hire engineers, researchers, designers and operators who would rather work across trades than stay in one box.</p>
+                            <p>There are no open roles listed today. Write and tell us what you would build.</p>
+                            <a href="mailto:careers@fabiorovai.com" class="btn btn-steel">careers@fabiorovai.com</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section id="careers" class="section careers">
-        <div class="container">
-            <div class="careers-inner">
-                <div>
-                    <p class="section-tag">Careers</p>
-                    <h2>Join us.</h2>
-                    <p>We're building a team of sharp, curious people who want to work across disciplines. If you're an engineer, researcher, designer, or operator who doesn't want to be put in a box, we're your kind of company.</p>
-                    <p>We hire for craft and character. Roles span AI engineering, data science, education design, systems programming, and operations.</p>
+            <section class="cta" id="contact" aria-label="Contact">
+                <div class="wrap tiles">
+                    <a class="tile on-bone" href="mailto:fabio@fabiorovai.com">
+                        <span class="tile-top">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+                        <span class="tile-note">AI adoption projects, team training, research collaborations and tools that do not exist yet.</span>
+                    </a>
+                    <a class="tile tile-line" href="https://github.com/fabio-rovai/open-ontologies" target="_blank" rel="noopener">
+                        <span class="tile-top">Start building <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+                        <span class="tile-note">Open Ontologies is free to run and take apart. Start with the repository.</span>
+                    </a>
                 </div>
-                <div class="careers-cta">
-                    <div class="careers-box">
-                        <h3>No open roles right now</h3>
-                        <p>We're not actively hiring yet, but we're always interested in exceptional people. Drop us a line and tell us what you'd build if you joined.</p>
-                        <a href="mailto:careers@fabiorovai.com" class="btn btn-primary">careers@fabiorovai.com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section id="contact" class="section contact">
-        <div class="container">
-            <div class="contact-inner">
-                <h2>Let's talk.</h2>
-                <p>Whether you're exploring AI adoption, need training for your team, want to collaborate on research, or have a creative project in mind, we'd love to hear from you.</p>
-                <div class="contact-links">
-                    <a href="mailto:fabio@fabiorovai.com" class="btn btn-primary">fabio@fabiorovai.com</a>
-                    <a href="https://www.linkedin.com/in/fabiorovai/" target="_blank" class="btn btn-outline">LinkedIn</a>
-                    <a href="https://github.com/fabio-rovai" target="_blank" class="btn btn-outline">GitHub</a>
-                </div>
-            </div>
         </div>
-    </section>
+    </main>
 
-    <footer class="footer">
-        <div class="container footer-inner">
-            <p>&copy; 2026 Fabio Rovai Ltd. London, UK.</p>
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/fabiorovai/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/fabio-rovai" target="_blank">GitHub</a>
+    <footer class="foot">
+        <div class="wrap">
+            <div class="foot-word" aria-hidden="true"></div>
+            <div class="foot-cols">
+                <p class="legal"><strong>Registered company</strong>Rovai Heavy Industries is the trading name of Fabio Rovai Ltd, a company registered in England and Wales, number 13809380.</p>
+                <nav class="foot-col" aria-label="Software"><p class="mono">Software</p><a href="https://github.com/fabio-rovai/open-ontologies" target="_blank" rel="noopener">Open Ontologies</a><a href="https://github.com/fabio-rovai/tardygrada" target="_blank" rel="noopener">Tardygrada</a><a href="https://github.com/fabio-rovai/brain-in-the-fish" target="_blank" rel="noopener">Brain in the Fish</a><a href="https://github.com/fabio-rovai/worldproof" target="_blank" rel="noopener">WorldProof</a><a href="https://github.com/fabio-rovai/mcp-former" target="_blank" rel="noopener">mcp-former</a></nav>
+                <nav class="foot-col" aria-label="Work"><p class="mono">Work</p><a href="#featured">Featured work</a><a href="#sectors">Open work by sector</a><a href="#work">Work delivered</a><a href="#latest">Latest</a></nav>
+                <nav class="foot-col" aria-label="Company"><p class="mono">Company</p><a href="#company">The group</a><a href="#careers">Careers</a><a href="#contact">Contact</a></nav>
+                <nav class="foot-col" aria-label="Elsewhere"><p class="mono">Elsewhere</p><a href="https://github.com/fabio-rovai" target="_blank" rel="noopener">GitHub</a><a href="#top">Back to top</a></nav>
+            </div>
+            <div class="foot-base mono">
+                <p>&copy; 2026 Rovai Heavy Industries. London, UK.</p>
+                <p>Heavy industry for machine reasoning</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Mobile nav toggle
-        document.querySelector('.nav-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('open');
-            this.classList.toggle('active');
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', e => {
-                e.preventDefault();
-                const target = document.querySelector(a.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    document.querySelector('.nav-links').classList.remove('open');
-                    document.querySelector('.nav-toggle').classList.remove('active');
-                }
-            });
-        });
-
-        // Navbar background on scroll
-        window.addEventListener('scroll', () => {
-            document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 50);
-        });
-    </script>
+    <script src="/assets/forge.js" defer></script>
+    <script src="/assets/site.js" defer onerror="document.documentElement.classList.remove('js')"></script>
 
 </body>
 </html>
